@@ -11,7 +11,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name="rsa_ct_kip",
-      version="0.4.0",
+      version="0.4.1",
       description="Provision an RSA SecurID token with RSA's CT-KIP protocol",
       long_description=long_description,
       long_description_content_type="text/markdown",
