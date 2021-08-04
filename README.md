@@ -14,7 +14,13 @@ If you use the RSA's official software (RSA SecurID) to provision the
 token, it will obscure the token seed to prevent you from copying it
 to another computer:
 
-![\"Import from Web\" dialog in RSA SecurID for Windows](Import_from_Web_in_RSA_SecurID.png)
+![\"Import from Web\" dialog in RSA SecurID for Windows](https://gitlab.com/southgate/apps/softtoken/rsa_ct_kip/-/raw/master/Import_from_Web_in_RSA_SecurID.png)
+
+What is this Fork?
+==================
+This repo has been forked from [https://github.com/dlenski/rsa_ct_kip](github.com/dlenski/rsa_ct_kip) purely for the purpose of publishing to PyPi.
+
+This fork can be found here: [https://gitlab.com/southgate/apps/softtoken/rsa_ct_kip](gitlab.com/southgate/apps/softtoken/rsa_ct_kip)
 
 Requirements
 ============
@@ -24,12 +30,11 @@ Client needs Python **3.x**, PyCryptoDome, and requests (which will be automatic
 Install with `pip3` to automatically fetch Python dependencies. (Note that on most systems, `pip` invokes the Python 2.x version, while `pip3` invokes the Python 3.x version.)
 
 ```
-# Install latest development version
-$ pip3 install https://github.com/dlenski/rsa_ct_kip/archive/HEAD.zip
+# Install latest version
+$ pip3 install rsa_ct_kip
 
-# Install a tagged release
-# (replace "RELEASE" with one of the tag/release version numbers on the "Releases" page)
-$ pip3 install https://github.com/dlenski/rsa_ct_kip/archive/v0.3.zip
+# Install a specific version
+$ pip3 install rsa_ct_kip==0.1
 ```
 
 Provision token using client
@@ -41,7 +46,7 @@ It will communicate with the RSA CT-KIP server and provision a token,
 then attempt to call `stoken` to convert the token to XML/.sdtid format:
 
 ```
-$ rsa_ct_kip https://server.company.com:443/ctkip/services/CtkipService ACTIVATION_CODE template.xml
+$ rsa_ct_kip https://server.company.com:443/ctkip/services/CtkipService ACTIVATION_CODE /tmp/test.sdtid
 Sending ClientHello request to server...
 Received ServerHello response with server nonce (R_S = 28198dbe2c18a00335179cc5bb4eff3a) and 1024-bit RSA public key
 Generated client nonce (R_C = 12bec1a6f4d09470986b485561c4d2b5)
