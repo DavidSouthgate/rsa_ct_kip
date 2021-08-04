@@ -7,9 +7,14 @@ from setuptools import setup
 if sys.version_info < (3,3):
     sys.exit("Python 3.3 or newer is required.")
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(name="rsa_ct_kip",
-      version="0.4",
+      version="0.5.0",
       description="Provision an RSA SecurID token with RSA's CT-KIP protocol",
+      long_description=long_description,
+      long_description_content_type="text/markdown",
       author="Daniel Lenski",
       author_email="dlenski@gmail.com",
       license='MIT',
