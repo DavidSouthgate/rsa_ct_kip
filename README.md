@@ -11,6 +11,12 @@ provision the token and save it in a format that you can use with
 If you use the RSA's official software to provision the token, it will obscure the
 token seed to prevent you from copying it to another computer.
 
+What is this Fork?
+==================
+This repo has been forked from [https://github.com/dlenski/rsa_ct_kip](github.com/dlenski/rsa_ct_kip) purely for the purpose of publishing to PyPi.
+
+This fork can be found here: [https://gitlab.com/southgate/apps/softtoken/rsa_ct_kip](gitlab.com/southgate/apps/softtoken/rsa_ct_kip)
+
 Requirements
 ============
 
@@ -21,12 +27,11 @@ Server needs Flask as well.
 Install with `pip3` to automatically fetch Python dependencies. (Note that on most systems, `pip` invokes the Python 2.x version, while `pip3` invokes the Python 3.x version.)
 
 ```
-# Install latest development version
-$ pip3 install https://github.com/dlenski/rsa_ct_kip/archive/HEAD.zip
+# Install latest version
+$ pip3 install rsa_ct_kip
 
-# Install a tagged release
-# (replace "RELEASE" with one of the tag/release version numbers on the "Releases" page)
-$ pip3 install https://github.com/dlenski/rsa_ct_kip/archive/v0.3.zip
+# Install a specific version
+$ pip3 install rsa_ct_kip==0.1
 ```
 
 Provision token using client
