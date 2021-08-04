@@ -22,6 +22,12 @@ This repo has been forked from [https://github.com/dlenski/rsa_ct_kip](github.co
 
 This fork can be found here: [https://gitlab.com/southgate/apps/softtoken/rsa_ct_kip](gitlab.com/southgate/apps/softtoken/rsa_ct_kip)
 
+What is this Fork?
+==================
+This repo has been forked from [https://github.com/dlenski/rsa_ct_kip](github.com/dlenski/rsa_ct_kip) purely for the purpose of publishing to PyPi.
+
+This fork can be found here: [https://gitlab.com/southgate/apps/softtoken/rsa_ct_kip](gitlab.com/southgate/apps/softtoken/rsa_ct_kip)
+
 Requirements
 ============
 
